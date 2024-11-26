@@ -1,7 +1,3 @@
-package Task1;
-
-import Task1.Gallery;
-
 public class Main {
     public static void main(String[] args) {
 

@@ -1,5 +1,3 @@
-package Task1;
-
 import java.util.Objects;
 
 public class Picture {
@@ -27,7 +25,7 @@ public class Picture {
 
     @Override
     public String toString() {
-        return "Task1.Picture{" +
+        return "Picture{" +
                 "name='" + name + '\'' +
                 ", year=" + year +
                 ", author='" + author + '\'' +
