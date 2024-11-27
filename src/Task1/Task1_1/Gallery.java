@@ -32,10 +32,10 @@ public class Gallery {
         return "Ця картина має такі дані: " + picture.toString();
     }
 
-    public Picture getPicture(Picture picture){
+    public Picture getPicture(String name){
         for (Picture p:
                 _pictures) {
-            if(p.equals(picture)){
+            if(p.get_name().equals(name)){
                 return  p;
             }
         }

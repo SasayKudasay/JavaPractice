@@ -28,7 +28,7 @@ public class Main {
 
         gallery.set_article("Ця галерея присвячена новому року");
         System.out.println(
-                gallery.getPicture(picture1) + "\n" +
+                gallery.getPicture("C3") + "\n" +
                 gallery.get_name() + "\n" +
                 gallery.get_article()+ "\n" +
                 gallery.getPictureCount() + "\n" +
