@@ -1,6 +1,4 @@
-package Task1;
-
-import Task1.Gallery;
+package Task1.Task1_1;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,24 +13,24 @@ public class Main {
         gallery.addPicture(picture3);
 
         for (Picture picture:
-                gallery.getPictures()) {
+                gallery.get_pictures()) {
             System.out.println(picture);
         }
 
         System.out.println();
         gallery.removePicture(picture2);
         for (Picture picture:
-                gallery.getPictures()) {
+                gallery.get_pictures()) {
             System.out.println(picture);
         }
 
         System.out.println();
 
-        gallery.setArticle("Ця галерея присвячена новому року");
+        gallery.set_article("Ця галерея присвячена новому року");
         System.out.println(
                 gallery.getPicture(picture1) + "\n" +
-                gallery.getName() + "\n" +
-                gallery.getArticle()+ "\n" +
+                gallery.get_name() + "\n" +
+                gallery.get_article()+ "\n" +
                 gallery.getPictureCount() + "\n" +
                 gallery.describePicture(picture1)
         );
