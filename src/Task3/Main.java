@@ -12,8 +12,6 @@ public class Main {
         Picture picture2 = new Picture("A1",(short) 1990,"Author");
         Picture picture3 = new Picture("C3", (short) 2020, "DODO");
 
-        ArrayList<AbstractCommand>
-
         AbstractCommand addCommand1 = new AddPictureCommand(picture1, "Головний зал", gallery);
         AbstractCommand addCommand2 = new AddPictureCommand(picture2, "Ліво крило", gallery);
         AbstractCommand addCommand3 = new AddPictureCommand(picture3, "Праве крило", gallery);
@@ -37,6 +35,6 @@ public class Main {
 
         galleryController.undoCommand(addCommand2);
 
-        galleryController.addCommand()
+
     }
 }
