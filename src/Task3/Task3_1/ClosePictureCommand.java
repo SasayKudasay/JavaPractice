@@ -1,6 +1,6 @@
-package Task3;
+package Task3.Task3_1;
 
-public class ClosePictureCommand extends AbstractCommand{
+public class ClosePictureCommand extends AbstractCommand {
 
     private Picture _picture;
     private String _time;

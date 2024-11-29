@@ -1,7 +1,5 @@
-package Task3;
+package Task3.Task3_1;
 
-
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,6 +32,13 @@ public class Main {
         System.out.println();
 
         galleryController.undoCommand(addCommand2);
+        galleryController.addCommand(removeCommand2);
+        galleryController.addCommand(closeCommand2);
+
+        System.out.println();
+
+        galleryController.executeAllPendingCommands();
+        galleryController.undoChanges(2);
 
 
     }

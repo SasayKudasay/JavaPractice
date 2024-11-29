@@ -1,6 +1,10 @@
-package Task3;
+package Task3.Task3_1;
 
-public class RemovePictureCommand extends AbstractCommand{
+import Task3.Task3_1.AbstractCommand;
+import Task3.Task3_1.Gallery;
+import Task3.Task3_1.Picture;
+
+public class RemovePictureCommand extends AbstractCommand {
 
     private Picture _picture;
     private Gallery _gallery;

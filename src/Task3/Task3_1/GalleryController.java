@@ -1,4 +1,6 @@
-package Task3;
+package Task3.Task3_1;
+
+import Task3.Task3_1.AbstractCommand;
 
 import java.util.ArrayList;
 
@@ -34,7 +36,8 @@ public class GalleryController {
 
     public void executeAllPendingCommands()
     {
-        for (AbstractCommand command : _commandsToExecute) {
+        ArrayList<AbstractCommand> commandsCopy = new ArrayList<>(_commandsToExecute);
+        for (AbstractCommand command : commandsCopy) {
             command.execute();
             _commandsHistory.add(command);
             _commandsToExecute.remove(command);
