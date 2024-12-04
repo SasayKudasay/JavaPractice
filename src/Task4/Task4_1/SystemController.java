@@ -21,6 +21,7 @@ public class SystemController extends Observable{
              _alertHistory) {
             for (int a = 0; a < (int)(Math.random() * 3 + 1); a++ ){
                 myNotify(s);
+                System.out.println();
             }
         }
     }
