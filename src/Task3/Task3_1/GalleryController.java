@@ -1,8 +1,8 @@
 package Task3.Task3_1;
 
-import Task3.Task3_1.AbstractCommand;
 
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 public class GalleryController {
     private ArrayList<AbstractCommand> _commandsToExecute = new ArrayList<>();
@@ -20,9 +20,9 @@ public class GalleryController {
     }
 
     public void executeCommand(){
-        _commandsToExecute.getLast().execute();
-        _commandsHistory.add(_commandsToExecute.getLast());
-        removeCommand(_commandsToExecute.getLast());
+        _commandsToExecute.get(_commandsToExecute.size() - 1).execute();
+        _commandsHistory.add(_commandsToExecute.get(_commandsToExecute.size() - 1));
+        removeCommand(_commandsToExecute.get(_commandsToExecute.size() - 1));
     }
 
     public void undoCommand(AbstractCommand command){
