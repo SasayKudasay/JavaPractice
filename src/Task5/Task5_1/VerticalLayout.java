@@ -16,7 +16,7 @@ public class VerticalLayout extends WindowComponent{
         this.nestedComponent = new ArrayList<>();
     }
 
-    protected void draw(){
+    public void draw(){
         jPanel = new JPanel();
         JLabel jLabel = new JLabel(name);
         jLabel.setSize(_width, _height);

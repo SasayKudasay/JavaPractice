@@ -14,7 +14,7 @@ public class Button extends WindowComponent{
 
 
     @Override
-    protected void draw() {
+    public void draw() {
         jButton = new JButton(_text);
         jButton.setName(name);
     }

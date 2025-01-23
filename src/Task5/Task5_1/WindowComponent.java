@@ -6,7 +6,7 @@ public abstract class WindowComponent {
     protected String name;
     protected ArrayList<WindowComponent> nestedComponent;
 
-    protected void draw(){
+    public void draw(){
 
         if(!nestedComponent.isEmpty()) {
             for (WindowComponent elem :

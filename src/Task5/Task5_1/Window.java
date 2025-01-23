@@ -18,7 +18,7 @@ public class Window extends WindowComponent {
     }
 
     @Override
-    protected void draw() {
+    public void draw() {
         JFrame frame = new JFrame(_tittle);
         frame.setSize(_width,_height);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -10,7 +10,9 @@ public class Main {
 
         verticalLayout.addComponent(button);
         window.addComponent(verticalLayout);
-        window.draw();
+
+        WindowManager windowManager = new WindowManager(window);
+        windowManager.draw();
     }
 
 }
