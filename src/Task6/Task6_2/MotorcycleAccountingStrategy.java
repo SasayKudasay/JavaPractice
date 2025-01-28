@@ -4,6 +4,6 @@ public class MotorcycleAccountingStrategy implements AccountingStrategy{
     @Override
     public void calculateTax(Transport transport) {
         double tax = transport.getValue() * 0.15;
-        System.out.println("Налог на мотоцикл " + tax + transport);
+        System.out.println("Податок на мотоцикл " + tax + transport);
     }
 }
