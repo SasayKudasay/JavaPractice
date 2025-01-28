@@ -2,7 +2,7 @@ package Task4.Task4_1;
 
 import java.time.LocalDate;
 
-public class SystemAlert {
+public class  SystemAlert {
     private AlertSeverity _severity;
     private String _message;
     private int _executionCode;
