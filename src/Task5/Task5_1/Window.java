@@ -5,6 +5,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class Window extends WindowComponent {
+    private JFrame frame;
     private String _tittle;
     private int _width;
     private int _height;
@@ -19,21 +20,20 @@ public class Window extends WindowComponent {
 
     @Override
     public void draw() {
-        JFrame frame = new JFrame(_tittle);
+        frame = new JFrame(_tittle);
         frame.setSize(_width,_height);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
 
         super.draw();
         for (WindowComponent component : nestedComponent) {
-            if (component instanceof VerticalLayout) {
-                VerticalLayout layout = (VerticalLayout) component;
-
-                frame.add(layout.getComponent(), BorderLayout.NORTH);
+                frame.add(component.getComponent(), BorderLayout.NORTH);
             }
-        }
-
         frame.setVisible(true);
+    }
 
+    @Override
+    public JComponent getComponent() {
+        return null;
     }
 }

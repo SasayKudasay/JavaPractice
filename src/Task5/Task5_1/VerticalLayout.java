@@ -25,11 +25,9 @@ public class VerticalLayout extends WindowComponent{
         super.draw();
 
         for (WindowComponent component : nestedComponent) {
-            if (component instanceof Button) {
-                Button button = (Button) component;
 
-                jPanel.add(button.getComponent(), BorderLayout.NORTH);
-            }
+                jPanel.add(component.getComponent(), BorderLayout.NORTH);
+
         }
     }
 

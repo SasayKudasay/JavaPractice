@@ -1,5 +1,6 @@
 package Task5.Task5_1;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 public abstract class WindowComponent {
@@ -19,6 +20,7 @@ public abstract class WindowComponent {
     public void addComponent(WindowComponent component){
         nestedComponent.add(component);
     }
+    public abstract JComponent getComponent();
 
     public void removeComponent(String name){
         for (WindowComponent elem:
