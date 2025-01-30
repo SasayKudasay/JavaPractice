@@ -10,11 +10,9 @@ public class SystemAlert {
     private String _process;
 
     public SystemAlert(AlertSeverity _severity, String _message,
-                       int _executionCode, LocalDate _timestamp, String _process) {
+                        String _process) {
         this._severity = _severity;
         this._message = _message;
-        this._executionCode = _executionCode;
-        this._timestamp = _timestamp;
         this._process = _process;
     }
 
