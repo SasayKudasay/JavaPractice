@@ -10,4 +10,5 @@ public interface IDatabaseAccessProxy {
     void close();
     void commit();
     void rollback();
+    void addLines(String line);
 }
