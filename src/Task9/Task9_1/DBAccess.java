@@ -10,8 +10,7 @@ public class DBAccess implements IDatabaseAccessProxy {
     private boolean _isOpen;
     private List<String> databaseLines;
 
-    public DBAccess(String url, boolean isOpen) {
-        this._url = url;
+    public DBAccess( boolean isOpen) {
         this._isOpen = isOpen;
         this.databaseLines = new ArrayList<>();
     }

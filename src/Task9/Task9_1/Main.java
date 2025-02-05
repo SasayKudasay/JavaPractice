@@ -2,7 +2,7 @@ package Task9.Task9_1;
 
 public class Main {
     public static void main(String[] args) {
-        DBAccess dbAccess = new DBAccess("TEXT.txt", false);
+        DBAccess dbAccess = new DBAccess( false);
         DBAccessProxy dbAccessProxy = new DBAccessProxy(dbAccess);
 
         DatabaseController databaseController = new DatabaseController(dbAccessProxy);
